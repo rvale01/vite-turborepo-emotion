@@ -29,7 +29,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@emotion/react": "11.8.1"
   }
 }
