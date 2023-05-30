@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef } from "react"
 import { Button } from '@acme/core';
 import { ThemeProvider, useTheme } from '@emotion/react';
@@ -9,7 +10,6 @@ function Component() {
   const theme = useTheme();
   console.log(theme);
 
-  // @ts-ignore
   return <Button>Main</Button>;
 }
 
@@ -18,6 +18,7 @@ function App() {
 
   //TODO: postMessage => provare con * => controllare se in termini di sicurezza e' meno sicuro o meno.
   const sendMessage = () => {
+    // @ts-ignore
     iframeRef.current.contentWindow.postMessage('ciao ciao bambinaaaaa lalala....', 'http://localhost/mop/index.php?dbName=tt_istanza_1#login');
   }
   return (
