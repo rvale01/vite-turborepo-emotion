@@ -1,27 +1,21 @@
 {
   "name": "@acme/core",
   "version": "0.0.0",
-  "main": "src/index.tsx",
+  "main": "./src/index.tsx",
   "sideEffects": false,
   "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
   "devDependencies": {
     "@acme/tsconfig": "workspace:*",
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "11.8.1",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "eslint": "^8.15.0",
     "eslint-config-acme": "workspace:*",
     "react": "^18.1.0",
-    "tsup": "^5.10.1",
     "typescript": "^4.5.3"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "peerDependencies": {
-    "@emotion/react": "^11.11.0"
+    "@emotion/react": "11.8.1",
+    "chroma-js": "^2.4.2"
   }
 }
